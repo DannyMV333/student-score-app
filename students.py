@@ -1,7 +1,16 @@
+from dataclasses import dataclass
+
+
+@dataclass
+class Student:
+    name: str
+    score: int
+
+
 students = [
-    {"name": "James", "score": 45},
-    {"name": "Deborah", "score": 82},
-    {"name": "Amaka", "score": 76},
-    {"name": "Daniel", "score": 90},
-    {"name": "Tunde", "score": 68},
+    Student("James", 45),
+    Student("Deborah", 82),
+    Student("Amaka", 76),
+    Student("Daniel", 90),
+    Student("Tunde", 68),
 ]
